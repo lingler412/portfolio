@@ -14,27 +14,43 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
-  .main_image {
+  .intro  {
+    display: inline-block;
+    position:absolute
+    text-align: center;
+    text-wrap: wrap;
+    width: 35%;
+    float: left;
+    font-family: 'monospace';
+    font-size: 35px;
+    color: white;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .profile_image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     float: right;
-    width: 30%;
-    height: 30%;
-    border-radius: 300px;
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
   }
 
-  .intro  {
-    text-align: left;
-    text-wrap: wrap;
+  .python_image {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: 20px;
     width: 60%;
+    height: auto;
   }
 
-/* Add a black background color to the top navigation */
 .topnav {
-    background-color: #4b4949;
-    width: inherit;
-    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    display: flex;
     border-radius: 2.5px;
   }
   
@@ -46,7 +62,7 @@ body {
     padding: 16px 18px;
     text-decoration: none;  
     font-size: 17px;
-    width: 10%;
+    width: 7%;
   }
   
   /* Change the color of links on hover */
