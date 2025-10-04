@@ -3,30 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rob Lingle — Resume</title>
-<style>
-  :root{--bg:#f6f7fb;--card:#fff;--accent:#0b67c2;--muted:#6b7280;--maxw:900px}
-  body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); margin:0; padding:32px; color:#111827}
-  .container{max-width:var(--maxw); margin:0 auto}
-  .card{background:var(--card); padding:28px; border-radius:12px; box-shadow:0 6px 24px rgba(13,19,40,0.06)}
-  header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
-  h1{margin:0;font-size:28px}
-  .contact{font-size:14px;color:var(--muted)}
-  .section{margin-top:22px}
-  .section h2{font-size:16px;margin:0 0 12px 0;color:var(--accent)}
-  p.lead{margin:0;color:#111827;line-height:1.5}
-  ul.core{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:0}
-  ul.core li{background:#eef6ff;padding:8px 10px;border-radius:8px;font-size:13px;color:#0b4f94}
-  .job{margin-bottom:14px}
-  .job h3{margin:0;font-size:15px}
-  .job .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .bullets{margin:8px 0 0 16px}
-  footer{margin-top:22px;font-size:13px;color:var(--muted)}
-  @media (max-width:640px){ h1{font-size:22px} .card{padding:18px} }
-</style>
+<link rel="stylesheet" type="text/css" href="css/resume.css"/>
+<title>Rob Lingle | Resume</title>
 </head>
 <body>
-<div class="container">
+<div id="document" class="container">
 <div class="card">
   <header>
     <div>
@@ -153,10 +134,16 @@
     </ul>
   </section>
 
-  <footer>
-    Generated from uploaded resume PDF.
-  </footer>
+  <!-- This div uses data-html2canvas-ignore="true" to exclude print/download buttons from screenshots and PDF exports -->
+  <div data-html2canvas-ignore="true">
+    <button onclick="printContent()">Print</button>
+    <button onclick="downloadContent()">Download</button>
+  </div>
+  
+  
 </div>
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+<script type="text/javascript" src="js/resume.js"></script>
 </body>
 </html>

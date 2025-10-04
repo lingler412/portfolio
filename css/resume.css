@@ -17,3 +17,23 @@ ul.core li{background:#eef6ff;padding:8px 10px;border-radius:8px;font-size:13px;
 footer{margin-top:22px;font-size:13px;color:var(--muted)}
 .headline{color:var(--muted);font-size:13px;text-align:right}
 @media (max-width:640px){ h1{font-size:22px} .card{padding:18px} }
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    background: #2f527b;
+    color: #fff;
+    border-radius: 3px;
+
+@media print { 
+    button { 
+      display: none!important;
+     } 
+     div#document.pagesize {
+        width: 100%;
+    }
+}
