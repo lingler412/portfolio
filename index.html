@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rob Lingle | Software Engineering Manager</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rob Lingle | Software Engineering Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div class="topnav">
-            <a class="fa fa-home" href="#home">  Home</a>
-            <a class="fa fa-file" href="./resume.html" target="_blank">  Resume</a>
-            <a class="fa fa-address-card" href="#about">  About</a>
-            <a class="fa fa-envelope" href="mailto:roblingle2@gmail.com">  Contact</a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/roblingle2/" target="_blank">  LinkedIn</a>
-        </div>
-    </header>
-    <div>
-        <p class="intro">Hi. <br>I'm Rob, a software engineering manager with a passion for building high-performing teams and delivering great software. I have over 20 years of experience in software development, and I've worked in a variety of industries, including finance, retail, and healthcare. I'm always looking for new opportunities to learn and grow!</p>
-        <img src="images/Eningineering_Manager_Class.png" alt="Python Class for Engineering Manager" class="python_image">
+  <header>
+    <div class="container">
+      <h1>Rob Lingle</h1>
+      <p class="subtitle">Software Engineering Manager | Leader | Coach</p>
+      <div class="contact">
+        <a href="mailto:roblingle2@gmail.com">roblingle2@gmail.com</a> ·
+        <a href="tel:4122258230">412.225.8230</a> ·
+        <a href="https://linkedin.com/in/roblingle2" target="_blank">LinkedIn</a>
+      </div>
+      <button id="theme-toggle">🌙 Dark Mode</button>
     </div>
+  </header>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a husband of over 20 years to my wonderful wife, and we’re proud parents of two amazing kids — our daughter, a freshman in high school, and our son, who’s in fifth grade. We call North Ridgeville, Ohio home, but each year we make time to explore new national parks and major cities together. Our happy place is Glen Arbor, Michigan — especially along the scenic stretch of M22. We’re big fans of Avatar: The Last Airbender and recently had the unforgettable experience of seeing the live orchestra performance of Avatar. I’m a tinkerer at heart, happiest when I’m building something — whether it’s software, infrastructure, or home improvement projects. At my core, I value being genuine, authentic, and empathetic, and I try to bring those traits into everything I do, both personally and professionally.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Azure Data Warehouse Modernization</h3>
+          <p>Led migration of enterprise data to Azure Synapse, improving performance and compliance visibility.</p>
+        </div>
+        <div class="project-card">
+          <h3>DevOps Automation Suite</h3>
+          <p>Created self-service deployment tools that reduced cycle time by 40% and standardized pipelines.</p>
+        </div>
+        <div class="project-card">
+          <h3>Agile Coaching Platform</h3>
+          <p>Designed an internal learning toolkit for TDD, BDD, and CI/CD, scaling agile best practices across teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <h2>Leadership & Experience</h2>
+      <ul class="experience-list">
+        <li><strong>Advanced Software Engineering Manager – Kroger</strong> <span>2023 – Present</span></li>
+        <li><strong>Software Engineering Manager – Hitachi Rail</strong> <span>2020 – 2021</span></li>
+        <li><strong>Business Technology Manager Sr. – PNC Bank</strong> <span>2019 – 2020</span></li>
+        <li><strong>Director of Engineering – CGI / Summa Technologies</strong> <span>2015 – 2017</span></li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <p>Outside of technology, I enjoy hiking with my family, photography, and experimenting with home automation projects. I’m also active in local developer communities and occasionally speak at agile and DevOps meetups.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rob Lingle — Built with HTML, CSS, and javascript</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
 </body>
 </html>
